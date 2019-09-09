@@ -16,7 +16,7 @@ public class vecka_37_ar_fin {
 		double deci = 3.14;
 		double radie = 5;
 		double area = deci*radie*radie;
-		System.out.println("FInt " + area);
+		System.out.println("Fint " + area);
 		
 	}
 
