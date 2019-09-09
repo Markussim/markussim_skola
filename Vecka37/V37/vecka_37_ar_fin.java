@@ -17,6 +17,7 @@ public class vecka_37_ar_fin {
 		double radie = 5;
 		double area = deci*radie*radie;
 		System.out.println("Fint " + area);
+		System.out.println("IT Problem? Västkust IT");
 		
 	}
 
