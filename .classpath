@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Vecka37"/>
+	<classpathentry kind="src" path="v39"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
