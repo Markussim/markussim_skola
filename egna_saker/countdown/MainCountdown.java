@@ -21,16 +21,26 @@ public class MainCountdown {
 
 			if ((time.substring(3)).matches("[0-9]+") && ((time.substring(0, 2).matches("[0-9]+")))) {
 
-				System.out.println("Correct");
+				System.out.println("Correct format");
+				
+				int timmar = Integer.parseInt(time.substring(0, 2));
+				
+				int minuter = Integer.parseInt(time.substring(3));
+				
+				int totalSec = timmar * 3600;
+				
+				totalSec = totalSec + minuter * 60;
+				
+				System.out.println(totalSec);
 			}
 
 			else {
 
-				System.out.println("Please input an actual time");
+				System.out.println("Please use format HH:MM");
 			}
 		} else {
 
-			System.out.println("5 characters please");
+			System.out.println("Please use format HH:MM");
 		}
 
 	}
