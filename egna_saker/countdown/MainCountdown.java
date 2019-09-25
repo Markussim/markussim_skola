@@ -1,5 +1,6 @@
 package countdown;
 
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class MainCountdown {
@@ -32,6 +33,10 @@ public class MainCountdown {
 				totalSec = totalSec + minuter * 60;
 				
 				System.out.println(totalSec);
+				
+			    //String currentTime = java.time.LocalTime.now();
+			    
+			    //System.out.println(currentTime);
 			}
 
 			else {
