@@ -16,13 +16,13 @@ public class MainCountdown {
 
 		if (5 == time.length()) {
 
-			System.out.println(time.substring(0, 2));
+			System.out.println(time.substring(0, 2)); //debug
 
-			System.out.println(time.substring(3));
+			System.out.println(time.substring(3)); //debug
 
 			if ((time.substring(3)).matches("[0-9]+") && ((time.substring(0, 2).matches("[0-9]+")))) {
 
-				System.out.println("Correct format");
+				System.out.println("Correct format"); //debug
 				
 				int timmar = Integer.parseInt(time.substring(0, 2));
 				
@@ -32,11 +32,21 @@ public class MainCountdown {
 				
 				totalSec = totalSec + minuter * 60;
 				
-				System.out.println(totalSec);
+				System.out.println(totalSec); //debug
 				
-			    //String currentTime = java.time.LocalTime.now();
+			    LocalTime currentTime_local = java.time.LocalTime.now();
 			    
-			    //System.out.println(currentTime);
+			    String currentTime = currentTime_local.toString();
+			    
+			    System.out.println(currentTime); //debug
+			    
+			    int currentTimmar = Integer.parseInt(currentTime.substring(0, 2));
+			    
+			    System.out.println(currentTimmar); //debug
+			    
+			    //int currentMinuter = Integer.parseInt(currentTime.substring(3));
+			    
+			    //System.out.println(currentMinuter);
 			}
 
 			else {
