@@ -44,9 +44,15 @@ public class MainCountdown {
 			    
 			    System.out.println(currentTimmar); //debug
 			    
-			    //int currentMinuter = Integer.parseInt(currentTime.substring(3));
+			    System.out.println(currentTime.substring(3).substring(0, 2)); //debug
 			    
-			    //System.out.println(currentMinuter);
+			    int currentMinuter = Integer.parseInt(currentTime.substring(3));
+			    
+			    int currentTotalSec = currentTimmar * 3600;
+			    
+			    currentTotalSec = currentTotalSec + currentMinuter * 60;
+			    
+			    System.out.println(currentTotalSec);
 			}
 
 			else {
