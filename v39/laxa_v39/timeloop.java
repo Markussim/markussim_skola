@@ -1,4 +1,4 @@
-//package laxa_v39;
+package laxa_v39;
 
 import java.util.Scanner;
 
