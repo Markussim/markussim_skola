@@ -8,13 +8,17 @@ public class Prime_main {
 		int[] primes = {2,3};
 		
 		for (int i = 0; i < 10; i++) {
-			int[] newPrimes = new int[primes.length+1];
-			int j = 0;
-			for(; j<primes.length;j++) {
-				newPrimes[j]= primes[j];
-			}
 			
-			newPrimes[j] = 4;
+			for(int ha = 0; ha < primes.length; ha++) {
+				if (i % primes[ha] == 0) {
+					int[] newPrimes = new int[primes.length+1];
+					int j = 0;
+					for(; j<primes.length;j++) {
+						newPrimes[j]= primes[j];
+					}
+					primes[i]= newPrimes[i];
+				}
+			}
 			primes=newPrimes;
 		}
 		
