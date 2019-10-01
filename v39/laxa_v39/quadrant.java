@@ -20,7 +20,7 @@ public class quadrant {
 		else {
 			check_2_or_3(y_cord);
 		}
-		
+		input.close();
 	}
 	
 	public static void check_1_or_4(int y_cord) {
