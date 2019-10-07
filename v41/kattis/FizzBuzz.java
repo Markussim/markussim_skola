@@ -6,9 +6,9 @@ public class FizzBuzz {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		int x = input.nextInt();
-		int y = input.nextInt();
-		int n = input.nextInt();
+		long x = input.nextLong();
+		long y = input.nextLong();
+		long n = input.nextLong();
 		
 		for (int i = 1; i < n + 1; i++) {
 			boolean noneFuzz = true;
@@ -25,7 +25,6 @@ public class FizzBuzz {
 			}
 			System.out.println();
 		}
-		
 		input.close();
 	}
 }
