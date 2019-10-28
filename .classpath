@@ -11,5 +11,6 @@
 	<classpathentry kind="src" path="egna_saker"/>
 	<classpathentry kind="src" path="v40"/>
 	<classpathentry kind="src" path="v41"/>
+	<classpathentry kind="src" path="v43"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
