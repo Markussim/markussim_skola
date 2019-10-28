@@ -11,17 +11,16 @@ public class Spavanac {
 		Scanner input = new Scanner(System.in);
 		
 		int hour = input.nextInt();
-		
-		System.out.println(hour);
-		
+		//System.out.println(hour);
 		int minute = input.nextInt();
-		
-		System.out.println(minute);
+		//System.out.println(minute);
 		
 		/*LocalTime time = LocalTime.of(hour, minute);
 		
 		System.out.println(time.minusMinutes(45));
 		*/
+
+		System.out.println(hour+", "+minute);
 		input.close();
 
 	}
