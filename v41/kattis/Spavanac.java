@@ -1,6 +1,6 @@
 package kattis;
 
-import java.time.LocalTime;
+//import java.time.LocalTime;
 
 import java.util.Scanner;
 
@@ -21,9 +21,9 @@ public class Spavanac {
 		/*LocalTime time = LocalTime.of(hour, minute);
 		
 		System.out.println(time.minusMinutes(45));
-		
-		input.close();
 		*/
+		input.close();
+
 	}
 
 }
