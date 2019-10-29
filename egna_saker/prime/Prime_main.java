@@ -19,7 +19,7 @@ public class Prime_main {
 					primes[i]= newPrimes[i];
 				}
 			}
-			primes=newPrimes;
+			//primes=newPrimes;
 		}
 		
 		for(int prime:primes) {
