@@ -3,10 +3,13 @@ package methods;
 public class classeslol {
     public static void main(String[] args) {
         testingClass testingObj = new testingClass();
-        System.out.println(testingObj.x);
+        System.out.println(testingObj.hahaMethod(100));
     }
 }
 
 class testingClass {
-   int x = 1;
+    public int hahaMethod(int haha) {
+        System.out.println("This prints something");
+        return haha;
+    }
 }
