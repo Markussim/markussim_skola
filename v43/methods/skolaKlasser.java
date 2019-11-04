@@ -60,7 +60,7 @@ public class skolaKlasser {
         char y = ' ';
         int ha = 1;
         for (int i = 0; i <= steps; i++) {
-            for (int j2 = ha; j2<=steps; j2++) {
+            for (int andraj = ha; andraj<=steps; andraj++) {
                 System.out.print(" ");
             }
             for (int j = 1; j<=i; j++) {
