@@ -1,4 +1,4 @@
-//package countdown;
+/*package countdown;
 
 import java.time.LocalTime;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ public class MainCountdown {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 
 
 		Scanner input = new Scanner(System.in);
@@ -16,11 +16,11 @@ public class MainCountdown {
 		String time;
 			try {
 				time = args[0];
-			} 
+			}
 			catch(Exception e) {
 				System.out.println("Skiv något");
 			}
-			
+
 		if (5 == time.length()) {
 			if ((time.substring(3)).matches("[0-9]+") && ((time.substring(0, 2).matches("[0-9]+")))) {
 
@@ -31,13 +31,13 @@ public class MainCountdown {
 				int totalSec = timmar * 3600;
 
 				totalSec = totalSec + minuter * 60;
-				
+
 				while (true ) {
 					the_actual_countdown(totalSec);
 					try {
 						Thread.sleep(10);
 					}
-					
+
 					catch (Exception e) {
 						// TODO: handle exception
 					}
@@ -64,7 +64,7 @@ public class MainCountdown {
 		int currentTimmar = Integer.parseInt(currentTime.substring(0, 2));
 
 		int currentMinuter = Integer.parseInt(currentTime.substring(3).substring(0, 2));
-		
+
 		int currentSekunder = Integer.parseInt(currentTime.substring(6).substring(0, 2));
 
 		int currentTotalSec = currentTimmar * 3600;
@@ -79,3 +79,4 @@ public class MainCountdown {
 	}
 
 }
+*/
