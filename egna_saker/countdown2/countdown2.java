@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class countdown2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         LocalTime hoursAndMinutes; //Initialises a localtime
         try { //If the arguments aren't empty, use that
             hoursAndMinutes = setLocalTime(args[0]);
@@ -14,8 +14,9 @@ public class countdown2 {
         }
 
         while (true) {
-            System.out.println(LocalTime.now().until(hoursAndMinutes, ChronoUnit.MINUTES)); //This is where it actually counts down, it simply uses the method included in LocalTime for that
-            System.out.println(LocalTime.now().until(hoursAndMinutes, ChronoUnit.SECONDS));
+            System.out.println((LocalTime.now().until(hoursAndMinutes, ChronoUnit.MINUTES)) + "\n" + (LocalTime.now().until(hoursAndMinutes, ChronoUnit.SECONDS))); //This is where it actually counts down, it simply uses the method included in LocalTime for that
+
+            Thread.sleep(10);
         }
     }
 
