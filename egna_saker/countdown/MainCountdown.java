@@ -1,5 +1,5 @@
-/*package countdown;
-
+//package countdown;
+/*
 import java.time.LocalTime;
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class MainCountdown {
 		Scanner input = new Scanner(System.in);
 
 		//System.out.println("When do you want to count down to?");
-		String time;
+		String time = "23:59";
 			try {
 				time = args[0];
 			}
@@ -75,8 +75,10 @@ public class MainCountdown {
 
 		System.out.println(doneTime/60);
 		System.out.println(doneTime);
+		//Runtime.getRuntime().exec("cls");
 
 	}
 
 }
+
 */
