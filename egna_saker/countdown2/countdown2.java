@@ -10,11 +10,31 @@ public class countdown2 {
         try { //If the arguments aren't empty, use that
             hoursAndMinutes = setLocalTime(args[0]);
         } catch (Exception e){
-            hoursAndMinutes = setLocalTime(get_a_string());
+            while (true) {
+                try {
+                    hoursAndMinutes = setLocalTime(get_a_string());
+                    break;
+                } catch (Exception a) {
+                    System.out.println("Please enter a correct number");
+                }
+            }
         }
 
         while (true) {
-            System.out.println((LocalTime.now().until(hoursAndMinutes, ChronoUnit.MINUTES)) + "\n" + (LocalTime.now().until(hoursAndMinutes, ChronoUnit.SECONDS))); //This is where it actually counts down, it simply uses the method included in LocalTime for that
+
+            String printThing = (LocalTime.now().until(hoursAndMinutes, ChronoUnit.MINUTES)) + "\n" + (LocalTime.now().until(hoursAndMinutes, ChronoUnit.SECONDS));
+
+            int printLenght = printThing.length();
+
+            System.out.println(printThing); //This is where it actually counts down, it simply uses the method included in LocalTime for that
+
+            //for (int i = 0; i >= printLenght; i++) {
+            //    System.out.print("\u000c");
+            //}
+
+
+            //System.out.println("${string:" + printLenght + "}");
+
             try {
                 Thread.sleep(10);
             } catch (Exception e) {
@@ -40,7 +60,7 @@ public class countdown2 {
         String input_string;
         while (true) {
             try {
-                System.out.println("When do you which to count down to? Please enter time in HH space MM format");
+                System.out.println("When do you which to count down to? Please enter time in HH MM format");
                 input_string = input.nextLine();
                 break;
             } catch (Exception e){

@@ -1,5 +1,5 @@
-//package countdown;
-/*
+package countdown;
+
 import java.time.LocalTime;
 import java.util.Scanner;
 
@@ -81,4 +81,3 @@ public class MainCountdown {
 
 }
 
-*/
