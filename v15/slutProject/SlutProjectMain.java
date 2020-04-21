@@ -11,7 +11,12 @@ public class SlutProjectMain {
         myWord.printWord();
         while (true) {
             System.out.println(myWord.guessLetter(myScanner.nextLine().charAt(0)));
+            if (myWord.checkWin()) {
+                break;
+            }
         }
+
+        System.out.println("You have won");
 
     }
 }

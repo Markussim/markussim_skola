@@ -21,18 +21,17 @@ public class Guesser {
         if (index != -1) {
             System.out.println("That letter exists in the word");
             lettersLeft = lettersLeft.replace(String.valueOf(input), "");
+        } else if (unPossessedWord.contains(String.valueOf(input))) {
+            System.out.println("You already guessed that letter");
         } else {
             System.out.println("That letter does not exist in the word");
         }
-        System.out.println(lettersLeft);
         possessWord();
         return possessedWord;
     }
 
     private void possessWord() {
-        int length = unPossessedWord.length();
-        System.out.println(length);
-        possessedWord = null;
+        int length = unPossessedWord.length();possessedWord = null;
         for (int i = 0; i < length; i++) {
             if (lettersLeft.contains(String.valueOf(unPossessedWord.charAt(i)))) {
                 if (possessedWord == null) {
@@ -41,8 +40,20 @@ public class Guesser {
                     possessedWord += " _";
                 }
             } else {
-                possessedWord += String.valueOf(lettersLeft.charAt(i));
+                if (possessedWord == null) {
+                    possessedWord = unPossessedWord.charAt(i) + "";
+                } else {
+                    possessedWord += " " + unPossessedWord.charAt(i);
+                }
             }
+        }
+    }
+
+    public boolean checkWin() {
+        if (lettersLeft.length() == 0) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
