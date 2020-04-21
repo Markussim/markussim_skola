@@ -13,10 +13,10 @@ public class Language {
     public Language(String language) {
         String theLanguage = language + ".txt";
         String line;
-        String folder = "v15/slutProject/";
+        String folder = "v15/slutProject/languages/";
         try {
             BufferedReader reader = new BufferedReader(new FileReader(folder + theLanguage));
-            while((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 words.add(line);
             }
         } catch (FileNotFoundException e) {
@@ -28,8 +28,8 @@ public class Language {
 
     }
 
-    public static void getWord() {
-        int random = (int )(Math.random() * length);
-        System.out.println(words.get(random).toLowerCase());
+    public String getWord() {
+        int random = (int) (Math.random() * length);
+        return words.get(random).toLowerCase();
     }
 }
