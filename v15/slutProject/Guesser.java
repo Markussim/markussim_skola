@@ -9,6 +9,7 @@ public class Guesser {
         lettersLeft = theWord;
         possessedWord = theWord;
         unPossessedWord = theWord;
+        lettersLeft = lettersLeft.replaceAll("[^a-ö]", "");
     }
 
     public String printWord() {
@@ -55,5 +56,9 @@ public class Guesser {
         } else {
             return false;
         }
+    }
+
+    public String printPlain() {
+        return unPossessedWord;
     }
 }
