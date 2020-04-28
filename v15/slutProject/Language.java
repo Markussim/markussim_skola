@@ -17,7 +17,7 @@ public class Language {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(folder + theLanguage));
             while ((line = reader.readLine()) != null) {
-                words.add(line);
+                words.add(line.trim());
             }
         } catch (FileNotFoundException e) {
             System.out.println("That language does not exist");

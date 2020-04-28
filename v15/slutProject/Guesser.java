@@ -4,6 +4,7 @@ public class Guesser {
     private static String possessedWord;
     private static String lettersLeft;
     private static String unPossessedWord;
+    private static String guessedLetters = "";
 
     public Guesser(String theWord) {
         lettersLeft = theWord;
@@ -18,6 +19,9 @@ public class Guesser {
     }
 
     public String guessLetter(char input) {
+        if (!guessedLetters.contains(String.valueOf(input))) {
+            guessedLetters = guessedLetters.concat(String.valueOf(input));
+        }
         int index = lettersLeft.indexOf(input);
         if (index != -1) {
             System.out.println("That letter exists in the word");
@@ -32,7 +36,8 @@ public class Guesser {
     }
 
     private void possessWord() {
-        int length = unPossessedWord.length();possessedWord = null;
+        int length = unPossessedWord.length();
+        possessedWord = null;
         for (int i = 0; i < length; i++) {
             if (lettersLeft.contains(String.valueOf(unPossessedWord.charAt(i)))) {
                 if (possessedWord == null) {
@@ -60,5 +65,13 @@ public class Guesser {
 
     public String printPlain() {
         return unPossessedWord;
+    }
+
+    public String lettersGuesses() {
+        return guessedLetters;
+    }
+
+    public void resetGuesses() {
+        guessedLetters = "";
     }
 }
